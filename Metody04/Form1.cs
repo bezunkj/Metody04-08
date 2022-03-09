@@ -19,11 +19,15 @@ namespace Metody04
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            int x = Convert.ToInt32(textBox1.Text);
+            int y = Convert.ToInt32(textBox2.Text);
+            MessageBox.Show("Mocnina:" + CelaCisla.Mocnina(x, y));
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            int x = Convert.ToInt32(textBox1.Text);
+            MessageBox.Show("Faktorial:" + CelaCisla.Faktorial(x, y));
 
         }
 
