@@ -58,5 +58,17 @@ namespace Metody04
 
             return soucet;
         }
+
+        public static bool JePrvocislo(int x)
+        {
+            bool prvocislo = true;
+
+            for(int i = x-1; i > 1 && prvocislo; i--)
+            {
+                if (x % i == 0) prvocislo = false;
+            }
+            if (x == 1) prvocislo = false; 
+            return prvocislo;
+        }
     }
 }

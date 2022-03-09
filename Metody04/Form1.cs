@@ -40,7 +40,17 @@ namespace Metody04
 
         private void button4_Click(object sender, EventArgs e)
         {
+            int x = Convert.ToInt32(textBox1.Text);
+            if (CelaCisla.JePrvocislo(x))
+            {
+                MessageBox.Show("Cislo " + x + " JE prvocislo");
 
+            } else
+            {
+                MessageBox.Show("Cislo " + x + " NENI prvocislo");
+
+
+            }
         }
 
         private void button5_Click(object sender, EventArgs e)
