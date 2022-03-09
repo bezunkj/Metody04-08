@@ -48,8 +48,6 @@ namespace Metody04
             } else
             {
                 MessageBox.Show("Cislo " + x + " NENI prvocislo");
-
-
             }
         }
 
