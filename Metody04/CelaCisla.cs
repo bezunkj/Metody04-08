@@ -37,5 +37,26 @@ namespace Metody04
 
             return vysledek;
         }
+
+        public static int CifLichSoucet(int x)
+        {
+            int cifra;
+
+            int soucet = 0;
+
+            while(x > 0)
+            {
+                cifra = x % 10;
+                x = x / 10;
+                if (cifra %2 != 0)
+                {
+                    soucet += cifra;
+                }
+
+               
+            }
+
+            return soucet;
+        }
     }
 }

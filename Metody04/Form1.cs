@@ -27,13 +27,15 @@ namespace Metody04
         private void button2_Click(object sender, EventArgs e)
         {
             int x = Convert.ToInt32(textBox1.Text);
-            MessageBox.Show("Faktorial:" + CelaCisla.Faktorial(x, y));
+            MessageBox.Show("Faktorial:" + CelaCisla.Faktorial(x));
 
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            int x = Convert.ToInt32(textBox1.Text);
 
+            MessageBox.Show("Soucet lichych cifer: " + CelaCisla.CifLichSoucet(x));
         }
 
         private void button4_Click(object sender, EventArgs e)
