@@ -70,5 +70,30 @@ namespace Metody04
             if (x == 1) prvocislo = false; 
             return prvocislo;
         }
+
+        public static int PocetDeliteluSudych(int x)
+        {
+            int pocet = 0;  
+            for(int i = 2; i <= x; i += 2)
+            {
+                if(x % i == 0)
+                {
+                    pocet++;
+                }
+            }
+            return pocet;
+        }
+
+        public static int Nsd(int x, int y)
+        {
+            for(int i = 2; i <= Math.Min(x,y); i++)
+            {
+                if(x % i == 0 && y % i == 0)
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
     }
 }

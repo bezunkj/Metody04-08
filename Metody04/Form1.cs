@@ -53,7 +53,8 @@ namespace Metody04
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            int x = Convert.ToInt32(textBox1.Text);
+            MessageBox.Show("Pocet sudych delitelu: " + CelaCisla.PocetDeliteluSudych(x));
         }
     }
 }
